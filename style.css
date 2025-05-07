@@ -10,132 +10,92 @@ body {
 .container {
     max-width: 800px;
     margin: 40px auto;
-    padding: 25px;
+    padding: 24px;
     background: #fff;
     border-radius: 14px;
     box-shadow: 0 3px 14px rgba(0,0,0,0.09);
+}
+
+header {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    max-width: 40vw;
+    border-radius: 50%;
+    display: block;
+    margin: 18px auto 8px auto;
 }
 
 h1 {
     color: #5bbcba;
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.intro {
-    display: flex;
-    align-items: flex-start;
-    gap: 22px;
-    flex-wrap: wrap;
+h2, h3 {
+    color: #58aab2;
+    margin-bottom: 8px;
+    margin-top: 30px;
 }
 
-.intro img {
-    width: 150px;
-    max-width: 40vw;
-    border-radius: 50%;
-    display: block;
-    margin-top: 10px;
+section {
+    margin-top: 18px;
 }
 
-.intro p {
-    flex: 1;
-    font-size: 1.17rem;
-    margin: 0;
-    line-height: 1.5;
+.books ul, .skills ul {
+    margin: 8px 0 0 20px;
 }
 
-.books {
-    margin-top: 35px;
+.experience table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
 }
-
-.books h2 {
-    color: #5bbcba;
-    margin-bottom: 6px;
-    font-size: 1.2rem;
-}
-
-.books ul {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.portfolio {
-    margin-top: 35px;
-}
-
-.portfolio h2 {
-    color: #5bbcba;
-    margin-bottom: 6px;
-    font-size: 1.2rem;
-}
-
-.portfolio .project {
-    margin-bottom: 20px;
-    padding: 15px;
+.experience th, .experience td {
+    padding: 10px 8px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    vertical-align: top;
+    text-align: left;
 }
 
-.portfolio .project h3 {
-    color: #333;
-    margin-bottom: 5px;
+.links h3 {
+    display: inline-block;
+    margin-right: 25px;
 }
-
-.portfolio .project a {
+.links a {
     color: #007bff;
     text-decoration: none;
+    font-size: 1.12rem;
+}
+.links a:hover {
+    text-decoration: underline;
 }
 
-.contact {
-    margin-top: 35px;
-}
-
-.contact h2 {
-    color: #5bbcba;
-    margin-bottom: 6px;
-    font-size: 1.2rem;
-}
-
-.contact p {
-    margin: 5px 0;
-}
-
-.contact a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 700px) {
     .container {
-        padding: 15px;
-        margin: 10px;
+        padding: 10px;
+        margin: 6px;
     }
-
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-
-    .intro {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .profile-img {
+        width: 90px;
+        max-width: 80vw;
     }
-
-    .intro img {
-        width: 120px;
-        max-width: 90vw;
+    .experience th, .experience td {
+        padding: 6px 4px;
+        font-size: 15px;
     }
-
-    .intro p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .books h2, .books ul {
-        text-align: center;
+    .books ul, .skills ul {
+        font-size: 15px;
     }
 }
+
 
 
 
